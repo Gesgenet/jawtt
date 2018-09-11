@@ -2,13 +2,6 @@
 
 define ( 'HOSTAL_LOCAL_DIR'  , get_stylesheet_directory_uri() );
 
-// creando una opcion
-/*if( is_admin() ){
-
-	add_action('after_setup_theme', 'tourmaster_hostal_option_init');
-
-}*/
-
 
 
 //Funcion para crear hostal option
@@ -109,18 +102,7 @@ if( !function_exists('tourmaster_hostal_option_init') ){
 	}
 }
 
-// Filtro para adicionar single post type hostal
-add_filter( 'single_template', 'hostal_template' );
 
-
-if( !function_exists('hostal_template') ){
-	function hostal_template( $template ){
-		if( get_post_type() == 'hostal' ){
-			$template = HOSTAL_LOCAL_DIR.'/single/hostal.php' ;
-		}
-		return $template;
-	}
-}
 
 
 
@@ -139,8 +121,6 @@ if( !function_exists('tourmaster_gdlr_core_hostal_add_page_builder') ){
 if( is_admin() ){ add_filter('gdlr_core_hostal_page_builder_val_init', 'tourmaster_hostal_page_builder_val_init'); }
 if( !function_exists('tourmaster_hostal_page_builder_val_init') ){
     function tourmaster_hostal_page_builder_val_init( $value ){
-        //variables para cargar
-        $contenido='Esto es una prueba de carga dinamica';
 
         $value = '[{"template":"wrapper","type":"background","value":{"id":"","class":"","content-layout":"full","max-width":"","enable-space":"enable","hide-this-wrapper-in":"none","animation":"none","animation-location":"0.8","full-height":"disable","decrease-height":"0px","centering-content":"disable","background-type":"color","background-color":"","background-image":"","background-image-style":"cover","background-image-position":"center","background-video-url":"","background-video-url-mp4":"","background-video-url-webm":"","background-video-url-ogg":"","background-video-image":"","background-pattern":"pattern-1","pattern-opacity":"1","parallax-speed":"0.8","overflow":"visible","border-type":"none","border-pre-spaces":{"top":"20px","right":"20px","bottom":"20px","left":"20px","settings":"link"},"border-width":{"top":"1px","right":"1px","bottom":"1px","left":"1px","settings":"link"},"border-color":"#ffffff","border-style":"solid","padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px","settings":"unlink"},"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px","settings":"link"},"skin":""},"items":[{"template":"element","type":"content-navigation","value":{"id":"","class":"","tabs":[{"id":"detail","title":"Descripción"},{"id":"service","title":"Servicios"},{"id":"locate","title":"Ubicación"},{"id":"eval","title":"Evaluaciones"}],"padding-bottom":"0px"}}]},{"template":"element","type":"title","value":{"id":"","class":"","title":"Descripción","caption":"","caption-position":"bottom","title-width":"300px","title-link-text":"","title-link":"","title-link-target":"_self","text-align":"left","left-media-type":"icon","left-icon":"fa fa-file-text-o","left-image":"","enable-side-border":"disable","side-border-size":"1px","side-border-spaces":"30px","side-border-style":"solid","side-border-divider-color":"","heading-tag":"h6","icon-font-size":"18px","title-font-size":"24px","title-font-weight":"600","title-font-style":"normal","title-font-letter-spacing":"0px","title-font-uppercase":"disable","caption-font-size":"16px","caption-font-weight":"400","caption-font-style":"italic","caption-font-letter-spacing":"0px","caption-font-uppercase":"disable","left-icon-color":"","title-color":"","title-link-hover-color":"","caption-color":"","caption-spaces":"10px","media-margin":{"top":"0px","right":"15px","bottom":"0px","left":"0px","settings":"unlink"},"padding-bottom":"35px"}},{"template":"element","type":"text-box","value":{"id":"","class":"","content":"","text-align":"left","font-size":"","padding-bottom":"30px"}}]';
 

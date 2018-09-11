@@ -19,6 +19,7 @@ add_action('init', 'RegisterHostal');
 
 
 if (!function_exists('RegisterHostal')){
+
 	function RegisterHostal() {
 		$labelhostal = array(
 			'name'               => _x( 'Hostal', 'post type general name' ),
@@ -50,7 +51,18 @@ if (!function_exists('RegisterHostal')){
 
 		register_post_type( 'hostal', $argshostal );
 	}
+
+    //add_filter( 'single_template' , 'hostal_template');
 }
+
+/*if( !function_exists('hostal_template') ){
+    function hostal_template( $template ){
+        if( get_post_type() == 'hostal' ){
+            $template = HOSTAL_LOCAL_DIR.'/single/hostal.php' ;
+        }
+        return $template;
+    }
+}*/
 
 
 /***
