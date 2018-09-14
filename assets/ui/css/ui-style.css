@@ -53,3 +53,34 @@ body{
 /*.traveltour-sticky-navigation.traveltour-fixed-navigation .traveltour-header-background{*/
     /*background-color: #ffffff !important;*/
 /*}*/
+
+
+.single-hostal .tourmaster-tour-info-outer{ padding: 55px 0px 20px; }
+.single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info{ font-weight: 500; font-size: 15px;  margin-bottom: 15px; width: 50%; float: left; }
+.single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info i{ width: 27px; }
+
+.single-hostal .tourmaster-single-header-title-wrap,
+.single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info-wrap{ padding-right: 410px; }
+.single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info-wrap,
+.single-hostal .tourmaster-single-main-content,
+.single-hostal .tourmaster-single-review{ padding-right: 410px; margin-bottom: 18px; }
+.single-hostal.tourmaster-body .gdlr-core-container{ padding-right: 430px; }
+.single-hostal.tourmaster-body .gdlr-core-container .gdlr-core-container{ padding-right: 0px; }
+.single-hostal.tourmaster-body .tourmaster-single-related-tour-container{ padding-right: 430px; }
+
+
+
+@media only screen and (max-width: 999px){
+    .tourmaster-hide-on-mobile{ display: none; }
+
+    .tourmaster-content-navigation-item-wrap{ display: none; }
+    .single-hostal .tourmaster-single-header-title-wrap{ padding: 150px 20px 30px; }
+    .single-hostal .tourmaster-single-header .tourmaster-header-price{ display: none; }
+    .single-hostal .tourmaster-tour-info-wrap{ padding-left: 0px; padding-right: 0px; }
+    .single-hostal.tourmaster-body .gdlr-core-container{ padding-left: 20px; padding-right: 20px; }
+    .single-hostal .tourmaster-single-main-content,
+    .single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info-wrap{ padding-left: 20px; padding-right: 20px; }
+    .single-hostal .tourmaster-single-review{ padding-left: 0px; padding-right: 0px; }
+    .single-hostal .tourmaster-single-review-content{ padding-left: 0px; }
+
+}
