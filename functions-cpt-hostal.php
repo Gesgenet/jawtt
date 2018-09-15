@@ -447,6 +447,18 @@ function normas_casa ( $post ) {
 add_action( 'save_post' , 'politica_cancelacion_save_meta_box' );
 add_action( 'save_post' , 'normas_casa_save_meta_box' );
 
+add_action ( 'save_post_hostal', 'init_review' );
+
+function init_review ($post_id){
+    $review = get_post_meta($post_id,'tourmaster-tour-rating', true );
+   if ( $review == "" ){
+       update_post_meta($post_id, 'tourmaster-tour-rating', array(
+           'score' => 0,
+           'reviewer' => 0
+       ));
+   }
+}
+
 
 function politica_cancelacion_save_meta_box( $post_id ){
 

@@ -13,7 +13,7 @@ while( have_posts() ){ the_post();
 
         get_header();
 
-        // print header title
+        // print header titletourmaster-tour-rating
         if( get_post_type() == 'post' ){
             get_template_part('header/header', 'title-blog');
         }

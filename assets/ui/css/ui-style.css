@@ -71,6 +71,9 @@ body{
 
 
 
+
+
+
 @media only screen and (max-width: 999px){
     .tourmaster-hide-on-mobile{ display: none; }
 
@@ -85,3 +88,4 @@ body{
     .single-hostal .tourmaster-single-review-content{ padding-left: 0px; }
 
 }
+
