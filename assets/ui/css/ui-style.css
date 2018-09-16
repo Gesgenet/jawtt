@@ -55,7 +55,8 @@ body{
 /*}*/
 
 
-.single-hostal .tourmaster-tour-info-outer{ padding: 55px 0px 20px; }
+.single-hostal .tourmaster-tour-info-outer{ padding: 55px 0px 20px;
+    background-color: #f5f5f5;}
 .single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info{ font-weight: 500; font-size: 15px;  margin-bottom: 15px; width: 50%; float: left; }
 .single-hostal .tourmaster-tour-info-outer .tourmaster-tour-info i{ width: 27px; }
 
